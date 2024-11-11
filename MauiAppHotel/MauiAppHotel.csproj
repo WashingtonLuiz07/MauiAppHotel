@@ -57,9 +57,28 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Helvetica-Bold.ttf" />
+	  <None Remove="Resources\Fonts\Helvetica-BoldOblique.ttf" />
+	  <None Remove="Resources\Fonts\helvetica-compressed-5871d14b6903a.otf" />
+	  <None Remove="Resources\Fonts\helvetica-light-587ebe5a59211.ttf" />
+	  <None Remove="Resources\Fonts\Helvetica-Oblique.ttf" />
+	  <None Remove="Resources\Fonts\helvetica-rounded-bold-5871d05ead8de.otf" />
+	  <None Remove="Resources\Fonts\Helvetica.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\ContratacaoHospedagem.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\HospedagemContratada.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
